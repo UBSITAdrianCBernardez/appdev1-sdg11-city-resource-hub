@@ -1,9 +1,10 @@
-# appdev1-sdg11-city-resource-hub
+<img width="1235" height="699" alt="image" src="https://github.com/user-attachments/assets/dc66a615-00fb-401b-9c2d-4239fecf42e9" /># appdev1-sdg11-city-resource-hub
 
 APPDEV1 Check-in 1 starter project for **SDG 11: Sustainable Cities and Communities**.
 
 ## Project Title
 City Resource Hub
+Updated by Bernardez for Check-in 1.
 
 ## SDG Chosen
 **SDG 11 – Sustainable Cities and Communities**
