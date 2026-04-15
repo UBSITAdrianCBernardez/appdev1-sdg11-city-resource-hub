@@ -5,7 +5,7 @@ APPDEV1 Check-in 1 starter project for **SDG 11: Sustainable Cities and Communit
 ## Project Title
 City Resource Hub
 Updated by Bernardez for Check-in 1.
-Updated by Panelo for Check-in 1.
+Updated by Panelo for Check-in 1
 Updated by Vinoya for Check-in 1.
 Updated by Miranda for Check-in 1.
 
