@@ -1,0 +1,27 @@
+<section class="page-shell">
+  <h2>Home</h2>
+  <p>
+    This Week 2 version of City Resource Hub now includes route guards, a parameterized route, and a live API
+    data section for community awareness in Baguio City.
+  </p>
+
+  <ul>
+    <li>4+ routes are configured</li>
+    <li>A canActivate guard protects the dashboard</li>
+    <li>A canDeactivate guard protects unsaved detail changes</li>
+    <li>RouterLinkActive highlights the current page</li>
+  </ul>
+
+  <div class="status-card">
+    <h3>Dashboard Access Control</h3>
+    <p>{{ accessLabel() }}</p>
+    <div class="actions">
+      <button type="button" (click)="enableDashboard()">Enable Dashboard</button>
+      <button type="button" class="secondary" (click)="disableDashboard()">Lock Dashboard</button>
+      <a routerLink="/dashboard">Go to Dashboard</a>
+    </div>
+    @if (!hasAccess()) {
+      <p class="hint">The dashboard route is currently locked. Enable it first to pass the canActivate guard.</p>
+    }
+  </div>
+</section>

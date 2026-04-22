@@ -1,0 +1,42 @@
+.page-shell {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.status-card {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #ecfeff;
+  border: 1px solid #a5f3fc;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+button,
+.actions a {
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  background: #0f766e;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+button.secondary {
+  background: #334155;
+}
+
+.hint {
+  margin-bottom: 0;
+  color: #0f766e;
+  font-weight: 600;
+}

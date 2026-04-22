@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e6fffb;
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  line-height: 1.5;
+}

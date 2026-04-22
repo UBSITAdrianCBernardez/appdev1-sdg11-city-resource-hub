@@ -1,0 +1,37 @@
+<section class="page-shell">
+  <h2>Dashboard</h2>
+  <p>
+    This dashboard shows live weather data that can support local preparedness and community planning for SDG 11.
+  </p>
+
+  @if (weather$ | async; as weather) {
+    @if (weather.error) {
+      <div class="message error">{{ weather.error }}</div>
+    } @else {
+      <div class="weather-card">
+        <p class="label">Live City Snapshot</p>
+        <h3>{{ weather.city | titlecase }}</h3>
+        <div class="stats-grid">
+          <article>
+            <span>Temperature</span>
+            <strong>{{ weather.temperature | number:'1.0-1' }} °C</strong>
+          </article>
+          <article>
+            <span>Wind Speed</span>
+            <strong>{{ weather.windSpeed | number:'1.0-1' }} km/h</strong>
+          </article>
+          <article>
+            <span>Timezone</span>
+            <strong>{{ weather.timezone }}</strong>
+          </article>
+          <article>
+            <span>Updated</span>
+            <strong>{{ weather.updatedAt | date:'medium' }}</strong>
+          </article>
+        </div>
+      </div>
+    }
+  } @else {
+    <div class="message">Loading live city data...</div>
+  }
+</section>
