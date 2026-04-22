@@ -79,3 +79,4 @@ npx ng version
 ```
 
 This project is intended for **Check-in 1 only**.
+Contributor: Derek15-dev 
