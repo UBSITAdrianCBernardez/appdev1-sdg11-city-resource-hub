@@ -9,8 +9,6 @@ Updated by Panelo for Check-in 1.
 Updated by Vinoya for Check-in 1
 Updated by Miranda for Check-in 1.
 
-Updated by Vinoya for Check-in 1
-
 ## SDG Chosen
 **SDG 11 – Sustainable Cities and Communities**
 
