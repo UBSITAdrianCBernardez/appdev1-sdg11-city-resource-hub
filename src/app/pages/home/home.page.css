@@ -40,3 +40,15 @@ button.secondary {
   color: #0f766e;
   font-weight: 600;
 }
+
+.api-list {
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 1.25rem;
+}
+
+.api-list li {
+  padding: 0.75rem;
+  border-radius: 10px;
+  background: #ffffff;
+}

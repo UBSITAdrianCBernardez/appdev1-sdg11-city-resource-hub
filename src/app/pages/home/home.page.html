@@ -1,8 +1,8 @@
 <section class="page-shell">
   <h2>Home</h2>
   <p>
-    This Week 2 version of City Resource Hub now includes route guards, a parameterized route, and a live API
-    data section for community awareness in Baguio City.
+    This Week 3 version of City Resource Hub includes route guards, a parameterized route,
+    and API data rendered through an Angular service using the async pipe.
   </p>
 
   <ul>
@@ -22,6 +22,24 @@
     </div>
     @if (!hasAccess()) {
       <p class="hint">The dashboard route is currently locked. Enable it first to pass the canActivate guard.</p>
+    }
+  </div>
+
+  <div class="status-card">
+    <h3>Community API Data</h3>
+    <p>Sample resource posts loaded from an external API through ApiService.</p>
+
+    @if (posts$ | async; as posts) {
+      <ul class="api-list">
+        @for (post of posts.slice(0, 5); track post.id) {
+          <li>
+            <strong>{{ post.title }}</strong>
+            <p>{{ post.body }}</p>
+          </li>
+        }
+      </ul>
+    } @else {
+      <p class="hint">Loading API data...</p>
     }
   </div>
 </section>
