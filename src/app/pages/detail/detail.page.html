@@ -1,0 +1,28 @@
+<section class="page-shell">
+  <h2>Resource Detail</h2>
+  <p>Sample route parameter: {{ sampleId }}</p>
+  <p>Edit the fields below, then try leaving the page to test the canDeactivate guard.</p>
+
+  <div class="form-grid">
+    <label>
+      Resource Name
+      <input [value]="resourceName" (input)="updateName(nameInput.value)" #nameInput />
+    </label>
+
+    <label>
+      Notes
+      <textarea rows="4" [value]="notes" (input)="updateNotes(notesInput.value)" #notesInput></textarea>
+    </label>
+  </div>
+
+  <div class="actions">
+    <button type="button" (click)="saveChanges()">Save Changes</button>
+    <a routerLink="/dashboard">Back to Dashboard</a>
+  </div>
+
+  @if (hasUnsavedChanges) {
+    <p class="warning">You have unsaved changes.</p>
+  } @else {
+    <p class="safe">No pending changes.</p>
+  }
+</section>
